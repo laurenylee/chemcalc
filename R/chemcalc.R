@@ -1,4 +1,4 @@
-#' @param compound_formula A string representing the chemical formula (e.g., "H2O").
+#' @param formula A string representing the chemical formula (e.g., "H2O").
 #' @return A numeric value representing the total molar mass of the compound.
 #' @title Molar Mass Calculator
 #' @description This function takes a chemical formula (e.g., "H2O") and calculates the molar mass
