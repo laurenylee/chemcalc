@@ -3,6 +3,7 @@
 #' @title Molar Mass Calculator
 #' @description This function takes a chemical formula (e.g., "H2O") and calculates the molar mass
 #' by summing the atomic weights of the elements in the compound.
+#' @param formula A string representing the chemical formula (e.g., "H2O").
 #' @importFrom dplyr filter
 #' @importFrom readr read_csv
 #' @importFrom stringr str_match_all
