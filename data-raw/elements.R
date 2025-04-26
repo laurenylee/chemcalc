@@ -2,6 +2,6 @@
 library(readr)
 library(dplyr)
 
-elements <- read_csv("data-raw/PubChemElements.csv")
+elements <- readr::read_csv("data-raw/PubChemElements.csv")
 usethis::use_data(elements, overwrite = TRUE)
 

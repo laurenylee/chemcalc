@@ -4,7 +4,7 @@
 \alias{calculate_molar_mass}
 \title{Molar Mass Calculator}
 \usage{
-calculate_molar_mass(compound_formula)
+calculate_molar_mass(formula)
 }
 \arguments{
 \item{compound_formula}{A string representing the chemical formula (e.g., "H2O").}
