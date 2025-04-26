@@ -5,6 +5,7 @@
 #' by summing the atomic weights of the elements in the compound.
 #' @importFrom dplyr filter
 #' @importFrom readr read_csv
+#' @importFrom stringr str_match_all
 #' @export
 
 calculate_molar_mass <- function(formula) {
@@ -24,7 +25,6 @@ calculate_molar_mass <- function(formula) {
 }
 
 #' @title Dilution Calculator (C1V1 = C2V2)
-#'
 #' @description This function calculates the missing variable from the dilution equation
 #' C1 * V1 = C2 * V2, where you provide the known values and the function
 #' solves for the unknown.
