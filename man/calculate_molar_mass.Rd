@@ -16,3 +16,6 @@ A numeric value representing the total molar mass of the compound.
 This function takes a chemical formula (e.g., "H2O") and calculates the molar mass
 by summing the atomic weights of the elements in the compound.
 }
+\examples{
+calculate_molar_mass(H2O)
+}
