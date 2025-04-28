@@ -17,5 +17,5 @@ This function takes a chemical formula (e.g., "H2O") and calculates the molar ma
 by summing the atomic weights of the elements in the compound.
 }
 \examples{
-calculate_molar_mass(H2O)
+calculate_molar_mass("H2O")
 }

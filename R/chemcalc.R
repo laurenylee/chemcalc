@@ -7,7 +7,7 @@
 #' @importFrom readr read_csv
 #' @importFrom stringr str_match_all
 #' @examples
-#' calculate_molar_mass(H2O)
+#' calculate_molar_mass("H2O")
 #' @export
 
 calculate_molar_mass <- function(formula) {
