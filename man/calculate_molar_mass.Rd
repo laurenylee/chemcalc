@@ -7,7 +7,7 @@
 calculate_molar_mass(formula)
 }
 \arguments{
-\item{compound_formula}{A string representing the chemical formula (e.g., "H2O").}
+\item{formula}{A string representing the chemical formula (e.g., "H2O").}
 }
 \value{
 A numeric value representing the total molar mass of the compound.
