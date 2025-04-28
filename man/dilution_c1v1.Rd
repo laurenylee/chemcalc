@@ -4,22 +4,23 @@
 \alias{dilution_c1v1}
 \title{Dilution Calculator (C1V1 = C2V2)}
 \usage{
-dilution_c1v1(C1, V1, C2 = NULL, V2 = NULL)
+dilution_c1v1(C1 = NULL, V1 = NULL, C2 = NULL, V2 = NULL)
 }
 \arguments{
-\item{C1}{Concentration of the stock solution.}
+\item{C1}{Concentration of the stock solution (optional).}
 
-\item{V1}{Volume of the stock solution.}
+\item{V1}{Volume of the stock solution (optional).}
 
 \item{C2}{Concentration of the diluted solution (optional).}
 
 \item{V2}{Volume of the diluted solution (optional).}
 }
 \value{
-The value of the missing variable (either C2 or V2).
+The value of the missing variable.
 }
 \description{
-This function calculates the missing variable from the dilution equation
-C1 * V1 = C2 * V2, where you provide the known values and the function
-solves for the unknown.
+This function calculates the missing variable (C1, V1, C2, or V2) from the dilution equation C1 * V1 = C2 * V2.
+}
+\examples{
+dilution_c1v1(C1 = 2, V1 = 100, V2 = 200)
 }
