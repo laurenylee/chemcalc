@@ -18,7 +18,8 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of chemcalc is to help students who need to simple calculations
+The purpose of chemcalc is to make it easier and faster for students to perform basic chemistry calculations without having to manually set up equations or look up atomic masses.
+It acts as a helpful study and lab companion for students learning introductory chemistry concepts.
 
 ## Installation
 
