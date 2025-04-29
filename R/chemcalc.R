@@ -26,6 +26,7 @@ calculate_molar_mass <- function(formula) {
   sum(molar_masses)
 }
 
+
 #' @title Dilution Calculator (C1V1 = C2V2)
 #' @description This function calculates the missing variable (C1, V1, C2, or V2) from the dilution equation C1 * V1 = C2 * V2.
 #' @param C1 Concentration of the stock solution (optional).
