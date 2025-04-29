@@ -13,3 +13,4 @@ test_that("Calculates C2 correctly", {
 test_that("Calculates V2 correctly", {
   expect_equal(dilution_c1v1(C1 = 3, V1 = 50, C2 = 1.5), 100)
 })
+
