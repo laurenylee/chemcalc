@@ -3,7 +3,7 @@
 #' by summing the atomic weights of the elements in the compound.
 #' @param formula A string representing the chemical formula (e.g., "H2O").
 #' @return A numeric value representing the total molar mass of the compound.
-#' @importFrom dplyr filter
+#' @importFrom dplyr filter .data
 #' @importFrom readr read_csv
 #' @importFrom stringr str_match_all
 #' @examples
@@ -18,7 +18,7 @@ calculate_molar_mass <- function(formula) {
   quantities[is.na(quantities)] <- 1
 
   atomic_masses <- sapply(element_symbols, function(symbol) {
-    element_data <- dplyr::filter(elements, Symbol == symbol)
+    element_data <- dplyr::filter(chemcalc::elements, .data[["Symbol"]] == symbol)
     element_data$AtomicMass
   })
 
