@@ -1,0 +1,48 @@
+---
+title: "Using the chemcalc package"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Using the chemcalc package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+Make sure the package is loaded before using the functions. 
+
+```{r setup}
+library(chemcalc)
+```
+
+## Molar Mass Calculation
+
+The calculate_molar_mass() function allows you to compute the molar mass of a compound by parsing its chemical formula and summing the atomic masses of its constituent elements.
+
+```{r}
+calculate_molar_mass("H2O")
+```
+
+You can also use more complex formulas with multiple elements and counts. This is useful in stoichiometry problems where you need the molar mass to convert between grams and moles.
+
+## Dilution Calculations (C1V1 = C2V2)
+
+The dilution_c1v1() function calculates the missing value specified by user in the dilution equation (C1 * V1 = C2 * V2). Only one of the four parameters should be left NULL. For example, finding the dilution of C2 :
+
+```{r}
+dilution_c1v1(C1 = 2, V1 = 50, V2 = 100)  # Returns C2
+```
+If more than one or none of the parameters are NULL, the function will stop with an error to guide proper usage.
+
+## Percent Yield
+The percent_yield() function calculates the efficiency of a reaction based on the actual and theoretical yields given.
+
+```{r}
+percent_yield(actual = 3.5, theoretical = 5)  # Should return 70
+```
+This is can be useful for lab-based evaluations of reaction success or determining optimization. 
