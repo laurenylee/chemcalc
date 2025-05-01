@@ -14,3 +14,16 @@ test_that("Calculates V2 correctly, where V2 is the volume of the diluted soluti
   expect_equal(dilution_c1v1(C1 = 3, V1 = 50, C2 = 1.5), 100)
 })
 
+test_that("Percent yield is 100 when actual equals theoretical", {
+  expect_equal(percent_yield(actual = 10, theoretical = 10), 100)
+})
+
+test_that("Percent yield is 0 when actual yield is 0", {
+  expect_equal(percent_yield(actual = 0, theoretical = 10), 0)
+})
+
+test_that("Function errors if theoretical is NULL", {
+  expect_error(percent_yield(actual = 5, theoretical = NULL),
+               "Both 'actual' and 'theoretical' yields must be provided.")
+})
+
