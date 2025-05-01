@@ -40,6 +40,11 @@ The dilution_c1v1() function calculates the missing value specified by user in t
 ```{r}
 dilution_c1v1(C1 = 2, V1 = 50, V2 = 100)  # Returns C2
 ```
+To find the initial volume (V1) needed to prepare a diluted solution:
+```{r}
+dilution_c1v1(C1 = 5, C2 = 1, V2 = 100)
+```
+
 If more than one or none of the parameters are NULL, the function will stop with an error to guide proper usage.
 
 ## Percent Yield
