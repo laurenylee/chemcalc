@@ -4,6 +4,10 @@
 # chemcalc
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/laurenylee/chemcalc/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/laurenylee/chemcalc/actions/workflows/R-CMD-check.yaml)
+[![Codecov test
+coverage](https://codecov.io/gh/laurenylee/chemcalc/graph/badge.svg)](https://app.codecov.io/gh/laurenylee/chemcalc)
 <!-- badges: end -->
 
 The purpose of chemcalc is to make it easier and faster for students to
