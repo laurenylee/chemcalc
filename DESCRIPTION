@@ -2,8 +2,8 @@ Package: chemcalc
 Title: A simple R interface that enables users to perform basic chemistry calculations
 Version: 0.0.0.9000
 Authors@R: 
-    person("Lauren", "Lee", , "lylee@smith.edu", role = c("aut", "cre"),
-    "Anglis", "Morales", , "armorales@smith.edu", role = c("aut", "cre"))
+  person("Lauren", "Lee", email = "lylee@smith.edu", role = c("aut", "cre"))
+  person("Anglis", "Morales", email = "amorales@smith.edu", role = c("aut", "cre"))
 Description: A simple R interface that enables users to perform basic chemistry calculations.
 License: MIT + file LICENSE
 Encoding: UTF-8
@@ -11,3 +11,11 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 URL: https://github.com/laurenylee/chemcalc
 BugReports: https://github.com/laurenylee/chemcalc/issues
+LazyData: true
+Imports:
+    dplyr,
+    readr,
+    stringr
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
