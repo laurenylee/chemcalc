@@ -45,3 +45,12 @@ calculated_C2 <- dilution_c1v1(C1 = 2, V1 = 50, V2 = 100)
 print(calculated_C2)
 #> [1] 1
 ```
+
+Given the actual and theoretical yields of a chemical reaction, this
+function calculates the percent yield, which indicates the efficiency of
+the reaction.
+
+``` r
+percent_yield(actual = 4.5, theoretical = 5.0)
+#> [1] 90
+```

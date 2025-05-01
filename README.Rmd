@@ -47,3 +47,9 @@ Given three known values of the dilution equation (C1 * V1 = C2 * V2), the dilut
 calculated_C2 <- dilution_c1v1(C1 = 2, V1 = 50, V2 = 100)
 print(calculated_C2)
 ```
+
+Given the actual and theoretical yields of a chemical reaction, this function calculates the percent yield, which indicates the efficiency of the reaction.
+
+```{r}
+percent_yield(actual = 4.5, theoretical = 5.0)
+```
