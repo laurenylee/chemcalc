@@ -62,3 +62,23 @@ dilution_c1v1 <- function(C1 = NULL, V1 = NULL, C2 = NULL, V2 = NULL) {
     return(V2)
   }
 }
+
+#' @title Percent Yield Calculator
+#' @description This function calculates the percent yield of a chemical reaction.
+#' @param actual The actual yield obtained from the experiment.
+#' @param theoretical The theoretical yield based on stoichiometric calculations.
+#' @return The percent yield as a numeric value.
+#' @examples
+#' percent_yield(actual = 3.5, theoretical = 5)
+#' @export
+percent_yield <- function(actual, theoretical) {
+  if (is.null(actual) || is.null(theoretical)) {
+    stop("Both 'actual' and 'theoretical' yields must be provided.")
+  }
+  if (theoretical == 0) {
+    stop("Theoretical yield cannot be zero.")
+  }
+
+  yield <- (actual / theoretical) * 100
+  return(yield)
+}
