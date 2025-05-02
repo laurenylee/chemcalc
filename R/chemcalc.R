@@ -82,3 +82,25 @@ percent_yield <- function(actual, theoretical) {
   yield <- (actual / theoretical) * 100
   return(yield)
 }
+
+
+#' @title Molarity Calculator
+#' @description This function calculates the molarity (M) of a solution, given the number of moles of solute and the volume of the solution in liters.
+#' @param moles The amount of solute in moles.
+#' @param volume_L The volume of the solution in liters.
+#' @return The molarity of the solution as a numeric value.
+#' @examples
+#' calc_molarity(moles = 0.5, volume_L = 1)
+#' @export
+calc_molarity <- function(moles, volume_L) {
+  if (is.null(moles) || is.null(volume_L)) {
+    stop("Both 'moles' and 'volume_L' must be provided.")
+  }
+  if (volume_L <= 0) {
+    stop("Volume must be greater than zero.")
+  }
+
+  M <- moles / volume_L
+  return(M)
+}
+
