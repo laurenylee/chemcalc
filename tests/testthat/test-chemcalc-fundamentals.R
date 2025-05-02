@@ -27,3 +27,13 @@ test_that("Function errors if theoretical is NULL", {
                "Both 'actual' and 'theoretical' yields must be provided.")
 })
 
+test_that("Calculates molarity correctly for fraction input", {
+  expect_equal(calc_molarity(moles = 0.5, volume_L = 2), 0.25)
+})
+
+test_that("Returns error if volume is zero", {
+  expect_error(calc_molarity(moles = 1, volume_L = 0),
+               "Volume must be greater than zero.")
+})
+
+
