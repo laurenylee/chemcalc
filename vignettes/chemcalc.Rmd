@@ -54,3 +54,12 @@ The percent_yield() function calculates the efficiency of a reaction based on th
 percent_yield(actual = 3.5, theoretical = 5)  # Should return 70
 ```
 This is can be useful for lab-based evaluations of reaction success or determining optimization. 
+
+## Calculating Molarity
+
+To calculate the molarity of a solution, you can use the `calc_molarity()` function. Just supply the number of moles of solute and the volume in liters:
+
+```{r}
+calc_molarity(moles = 0.25, volume_L = 0.5)
+```
+
